@@ -1,12 +1,25 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link v-for="(router, index) in routerJson" :key="index"
+        :to="{name: router.name}">{{ router.name }}  &nbsp;| </router-link>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import routerJson from '@/router/router.json'
+
+export default {
+  name: 'home',
+  data () {
+    return {
+      routerJson
+    }
+  }
+}
+</script>
 
 <style>
 #app {

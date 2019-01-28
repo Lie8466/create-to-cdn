@@ -15,15 +15,11 @@ yarn run serve
 yarn run build
 ```
 
-### Run your tests
+### 自动创建新页面
 ```
-yarn run test
+npm run new:page
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
