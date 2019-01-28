@@ -17,7 +17,7 @@ yarn run build
 
 ### 自动创建新页面
 ```
-npm run new:page
+yarn new:page
 ```
 
 
